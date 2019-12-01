@@ -4,8 +4,10 @@
 
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "DBUserPreference.h"
 #import "SettingViewController.h"
+#import "HentaiInfo.h"
 
 @interface NSObject (OwO)
 

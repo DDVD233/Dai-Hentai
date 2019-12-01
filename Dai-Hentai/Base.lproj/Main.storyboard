@@ -677,7 +677,7 @@
                         <outlet property="exLoginBarButtonItem" destination="Moc-cJ-UKW" id="GoF-ig-cyp"/>
                         <segue destination="ePr-gK-ENO" kind="show" identifier="PushToGallery" id="87c-oO-NHA"/>
                         <segue destination="h49-DX-5a9" kind="show" identifier="PushToRelated" id="fsC-AQ-c3x"/>
-                        <segue destination="iXs-Bf-Kna" kind="show" id="w9a-wJ-gSz"/>
+                        <segue destination="iXs-Bf-Kna" kind="show" identifier="PushToMoreInfo" id="w9a-wJ-gSz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WxR-t5-Qeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1091,7 +1091,7 @@
         <!--信息-->
         <scene sceneID="YY4-5c-e0r">
             <objects>
-                <viewController title="信息" id="iXs-Bf-Kna" sceneMemberID="viewController">
+                <viewController title="信息" id="iXs-Bf-Kna" customClass="GalleryInfoViewController" customModule="Dai_Hentai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iip-Z1-8D3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1109,13 +1109,13 @@
                                         <rect key="frame" x="130.66666666666663" y="8" width="236.33333333333337" height="172"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVr-5M-H4H">
-                                                <rect key="frame" x="8" y="0.0" width="228.33333333333334" height="64.333333333333329"/>
+                                                <rect key="frame" x="8" y="8" width="228.33333333333334" height="64.333333333333329"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV4-aA-PLv">
-                                                <rect key="frame" x="8" y="72.333333333333343" width="43.666666666666664" height="21"/>
+                                                <rect key="frame" x="8" y="80.333333333333343" width="43.666666666666664" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1140,7 +1140,7 @@
                                             <constraint firstAttribute="trailing" secondItem="yVr-5M-H4H" secondAttribute="trailing" id="DdS-pO-fXN"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gV4-aA-PLv" secondAttribute="trailing" constant="20" id="GpY-zH-A40"/>
                                             <constraint firstItem="yVr-5M-H4H" firstAttribute="leading" secondItem="PZU-4q-KyV" secondAttribute="leading" constant="8" id="HX3-Q7-D7B"/>
-                                            <constraint firstItem="yVr-5M-H4H" firstAttribute="top" secondItem="PZU-4q-KyV" secondAttribute="top" id="fuj-Pf-vy8"/>
+                                            <constraint firstItem="yVr-5M-H4H" firstAttribute="top" secondItem="PZU-4q-KyV" secondAttribute="top" constant="8" id="fuj-Pf-vy8"/>
                                             <constraint firstAttribute="trailing" secondItem="tWp-lI-BoM" secondAttribute="trailing" constant="8" id="imN-Pp-JxL"/>
                                             <constraint firstItem="cDe-PH-xA5" firstAttribute="top" secondItem="tWp-lI-BoM" secondAttribute="bottom" constant="2" id="jCP-8x-qBb"/>
                                             <constraint firstItem="gV4-aA-PLv" firstAttribute="leading" secondItem="PZU-4q-KyV" secondAttribute="leading" constant="8" id="p7W-kj-TqM"/>
@@ -1170,6 +1170,13 @@
                         <viewLayoutGuide key="safeArea" id="Tzj-Ci-EFn"/>
                     </view>
                     <navigationItem key="navigationItem" id="PR4-cm-DxH"/>
+                    <connections>
+                        <outlet property="category" destination="gV4-aA-PLv" id="mKX-KM-dY6"/>
+                        <outlet property="coverImage" destination="eTF-s3-Jbe" id="sVZ-jq-jln"/>
+                        <outlet property="galleryTitle" destination="yVr-5M-H4H" id="LPj-ak-rF4"/>
+                        <outlet property="loveCount" destination="cDe-PH-xA5" id="PO3-VF-k50"/>
+                        <outlet property="rating" destination="tWp-lI-BoM" id="kIF-wS-7Bk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kX5-C5-hnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1177,6 +1184,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sFK-aE-S2c"/>
+        <segue reference="87c-oO-NHA"/>
     </inferredMetricsTieBreakers>
 </document>
