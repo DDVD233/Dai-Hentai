@@ -353,7 +353,7 @@
     } else if ([segue.identifier isEqualToString:@"PushToMoreInfo"]) {
         GalleryInfoViewController *galleryInfoViewController = (GalleryInfoViewController *)segue.destinationViewController;
         galleryInfoViewController.info = sender;
-        
+        galleryInfoViewController.parser = self.parser;
     }
 }
 

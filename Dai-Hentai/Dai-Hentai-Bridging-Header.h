@@ -8,6 +8,8 @@
 #import "DBUserPreference.h"
 #import "SettingViewController.h"
 #import "HentaiInfo.h"
+#import "HentaiDownloadCenter.h"
+#import "GalleryCollectionViewHandler.h"
 
 @interface NSObject (OwO)
 
