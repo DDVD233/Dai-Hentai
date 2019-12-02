@@ -9,7 +9,10 @@
 #import "SettingViewController.h"
 #import "HentaiInfo.h"
 #import "HentaiDownloadCenter.h"
-#import "GalleryCollectionViewHandler.h"
+#import "DBGallery.h"
+#import "UIAlertController+Block.h"
+#import "GalleryViewController.h"
+#import "HentaiImagesManager.h"
 
 @interface NSObject (OwO)
 

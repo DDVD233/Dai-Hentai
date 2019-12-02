@@ -354,6 +354,7 @@
         GalleryInfoViewController *galleryInfoViewController = (GalleryInfoViewController *)segue.destinationViewController;
         galleryInfoViewController.info = sender;
         galleryInfoViewController.parser = self.parser;
+        galleryInfoViewController.delegate = self;
     }
 }
 
