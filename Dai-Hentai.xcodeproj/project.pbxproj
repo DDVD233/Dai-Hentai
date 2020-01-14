@@ -65,10 +65,8 @@
 		1CFE73131FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE73121FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h */; };
 		1CFEE1E921CA76DD00D6010C /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */; };
 		4DC6F4FDFFA849038487E4D8 /* libPods-Dai-Hentai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */; };
-		E4345EBE239456650031A354 /* GalleryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4345EBD239456650031A354 /* GalleryInfoViewController.swift */; };
 		E48D1A672357652E005F1439 /* SettingViewController+LoginUsingExKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E48D1A662357652E005F1439 /* SettingViewController+LoginUsingExKey.m */; };
 		E4D2013923948ED200BB7908 /* GalleryCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2013823948ED200BB7908 /* GalleryCollectionViewHandler.swift */; };
-		E4D2013B2394AED200BB7908 /* GalleryMoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2013A2394AED200BB7908 /* GalleryMoreInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -182,11 +180,9 @@
 		1CFE73121FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dai-Hentai-Bridging-Header.h"; sourceTree = "<group>"; };
 		1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dai-Hentai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4345EBD239456650031A354 /* GalleryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInfoViewController.swift; sourceTree = "<group>"; };
 		E48D1A662357652E005F1439 /* SettingViewController+LoginUsingExKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SettingViewController+LoginUsingExKey.m"; sourceTree = "<group>"; };
 		E48D1A6823576554005F1439 /* SettingViewController+LoginUsingExKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SettingViewController+LoginUsingExKey.h"; sourceTree = "<group>"; };
 		E4D2013823948ED200BB7908 /* GalleryCollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewHandler.swift; sourceTree = "<group>"; };
-		E4D2013A2394AED200BB7908 /* GalleryMoreInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryMoreInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */,
-				E4D2013A2394AED200BB7908 /* GalleryMoreInfoCell.swift */,
 			);
 			path = GalleryCell;
 			sourceTree = "<group>";
@@ -406,7 +401,6 @@
 		1C7CA7281E49B95200D94CFB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E4345EBC2394563A0031A354 /* GalleryInfoViewController */,
 				1C630F07200502870068879F /* TabBarController */,
 				1CFE730C1FFE2A720018172F /* LoginViewController */,
 				1C5203A620543005000B6F45 /* CheckPageViewController */,
@@ -721,14 +715,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E4345EBC2394563A0031A354 /* GalleryInfoViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E4345EBD239456650031A354 /* GalleryInfoViewController.swift */,
-			);
-			path = GalleryInfoViewController;
-			sourceTree = "<group>";
-		};
 		E48D1A6323576286005F1439 /* LoginUsingExKey */ = {
 			isa = PBXGroup;
 			children = (
@@ -773,7 +759,7 @@
 				TargetAttributes = {
 					1C1AD02E1E49B79800544217 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HWH6G9P2V2;
+						DevelopmentTeam = XLP7NJ2T65;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -907,11 +893,9 @@
 				1C9294E81E4C4330001AB1CE /* ListViewController.m in Sources */,
 				1C33D1111E5F391A00F0EB12 /* SearchCategoryCell.m in Sources */,
 				1C4D8B291E861B4100113D0E /* NSTimer+Block.m in Sources */,
-				E4D2013B2394AED200BB7908 /* GalleryMoreInfoCell.swift in Sources */,
 				1CEC12C21E500E9A00F3E3C4 /* DaiStorageProperty.m in Sources */,
 				1C000ED91E570F9C004060A5 /* ImageURLOperation.m in Sources */,
 				1C5BF266200CA3AE00FB260A /* DownloadedsViewController.m in Sources */,
-				E4345EBE239456650031A354 /* GalleryInfoViewController.swift in Sources */,
 				1C0608431E53473500E6A285 /* GalleryViewController.m in Sources */,
 				1C4D8B2D1E86201100113D0E /* UIAlertController+Block.m in Sources */,
 				1CEC12C11E500E9A00F3E3C4 /* DaiStoragePropertiesInObject.m in Sources */,
@@ -1080,7 +1064,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HWH6G9P2V2;
+				DEVELOPMENT_TEAM = XLP7NJ2T65;
 				INFOPLIST_FILE = "Dai-Hentai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1103,7 +1087,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HWH6G9P2V2;
+				DEVELOPMENT_TEAM = XLP7NJ2T65;
 				INFOPLIST_FILE = "Dai-Hentai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
