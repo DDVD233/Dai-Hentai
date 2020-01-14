@@ -4,6 +4,7 @@
 //
 //  Created by David Dai on 12/1/19.
 //  Copyright © 2019 DaidoujiChen. All rights reserved.
+//  這個class下的很多函數都是翻譯的Gallery View下的。
 //
 
 import UIKit
