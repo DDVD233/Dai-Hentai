@@ -165,6 +165,7 @@ class GalleryInfoViewController: UIViewController {
 }
 
 extension GalleryInfoViewController: HentaiImagesManagerDelegate, GalleryCollectionViewHandlerDelegate {
+    
     // MARK: - GalleryCollectionViewHandlerDelegate
 
     // 總共可顯示數量
@@ -173,14 +174,14 @@ extension GalleryInfoViewController: HentaiImagesManagerDelegate, GalleryCollect
     }
 
     // 觸發讀取圖片
-    func toggleLoadPages() {
+    func loadPages() {
         if userCurrentIndex + 20 >= manager?.imagePages.count ?? 0 {
             manager?.fetch(nil)
         }
     }
 
     // 觸發顯示圖片
-    func toggleDisplayImage(at indexPath: IndexPath?, in cell: GalleryCell?) {
+    func displayImage(at indexPath: IndexPath?, in cell: GalleryCell?) {
         guard let row = indexPath?.row else { return }
         if manager?.isReady(at: row) != nil {
             manager?.loadImage(at: row) { image in
@@ -207,7 +208,7 @@ extension GalleryInfoViewController: HentaiImagesManagerDelegate, GalleryCollect
     }
 
     // 回傳使用者正看到第幾頁
-    func userCurrentIndex(_ index: Int) {
+    func currentIndex(_ index: Int) {
         userCurrentIndex = index
     }
 
