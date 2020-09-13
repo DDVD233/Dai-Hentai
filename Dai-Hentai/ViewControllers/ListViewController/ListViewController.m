@@ -169,6 +169,14 @@
         [strongSelf performSegueWithIdentifier:@"PushToGallery" sender:info];
     } }];
     
+    [behaviors addObject:@{ @"更多信息": ^(void) {
+        if (!weakSelf) {
+            return;
+        }
+        __strong ListViewController *strongSelf = weakSelf;
+        [strongSelf performSegueWithIdentifier:@"PushToMoreInfo" sender:info];
+    } }];
+    
     if (![info isDownloaded]) {
         [behaviors addObject:@{ @"我要下載": ^(void) {
             if (!weakSelf) {
@@ -342,6 +350,11 @@
     else if ([segue.identifier isEqualToString:@"PushToRelated"]) {
         RelatedViewController *relatedViewController = (RelatedViewController *)segue.destinationViewController;
         relatedViewController.info = sender;
+    } else if ([segue.identifier isEqualToString:@"PushToMoreInfo"]) {
+        GalleryInfoViewController *galleryInfoViewController = (GalleryInfoViewController *)segue.destinationViewController;
+        galleryInfoViewController.info = sender;
+        galleryInfoViewController.parser = self.parser;
+        galleryInfoViewController.delegate = self;
     }
 }
 

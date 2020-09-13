@@ -4,8 +4,15 @@
 
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "DBUserPreference.h"
 #import "SettingViewController.h"
+#import "HentaiInfo.h"
+#import "HentaiDownloadCenter.h"
+#import "DBGallery.h"
+#import "UIAlertController+Block.h"
+#import "GalleryViewController.h"
+#import "HentaiImagesManager.h"
 
 @interface NSObject (OwO)
 
