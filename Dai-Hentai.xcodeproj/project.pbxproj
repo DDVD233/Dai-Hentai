@@ -65,6 +65,8 @@
 		1CFE73131FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE73121FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h */; };
 		1CFEE1E921CA76DD00D6010C /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */; };
 		4DC6F4FDFFA849038487E4D8 /* libPods-Dai-Hentai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */; };
+		E483EB2D257DD34D00360862 /* CommentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483EB2C257DD34D00360862 /* CommentParser.swift */; };
+		E483EB33257F13A800360862 /* HentaiComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483EB32257F13A800360862 /* HentaiComment.swift */; };
 		E48D1A672357652E005F1439 /* SettingViewController+LoginUsingExKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E48D1A662357652E005F1439 /* SettingViewController+LoginUsingExKey.m */; };
 		E4D2013923948ED200BB7908 /* GalleryCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2013823948ED200BB7908 /* GalleryCollectionViewHandler.swift */; };
 /* End PBXBuildFile section */
@@ -180,6 +182,8 @@
 		1CFE73121FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dai-Hentai-Bridging-Header.h"; sourceTree = "<group>"; };
 		1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dai-Hentai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E483EB2C257DD34D00360862 /* CommentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentParser.swift; sourceTree = "<group>"; };
+		E483EB32257F13A800360862 /* HentaiComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HentaiComment.swift; sourceTree = "<group>"; };
 		E48D1A662357652E005F1439 /* SettingViewController+LoginUsingExKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SettingViewController+LoginUsingExKey.m"; sourceTree = "<group>"; };
 		E48D1A6823576554005F1439 /* SettingViewController+LoginUsingExKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SettingViewController+LoginUsingExKey.h"; sourceTree = "<group>"; };
 		E4D2013823948ED200BB7908 /* GalleryCollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewHandler.swift; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 		1C7CA7281E49B95200D94CFB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E483EB30257DD70200360862 /* CommentViewController */,
 				1C630F07200502870068879F /* TabBarController */,
 				1CFE730C1FFE2A720018172F /* LoginViewController */,
 				1C5203A620543005000B6F45 /* CheckPageViewController */,
@@ -418,6 +423,7 @@
 		1C7CA7291E49BFB600D94CFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E483EB2B257DD32F00360862 /* CommentParser */,
 				1CAF38951E85623800A4C0DD /* Category */,
 				1C7CA72C1E49C13400D94CFB /* HentaiParser */,
 				1CE4D1B3200461C200F8B79A /* HentaiDownloadCenter */,
@@ -715,6 +721,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E483EB2B257DD32F00360862 /* CommentParser */ = {
+			isa = PBXGroup;
+			children = (
+				E483EB2C257DD34D00360862 /* CommentParser.swift */,
+				E483EB32257F13A800360862 /* HentaiComment.swift */,
+			);
+			path = CommentParser;
+			sourceTree = "<group>";
+		};
+		E483EB30257DD70200360862 /* CommentViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommentViewController;
+			sourceTree = "<group>";
+		};
 		E48D1A6323576286005F1439 /* LoginUsingExKey */ = {
 			isa = PBXGroup;
 			children = (
@@ -882,6 +904,7 @@
 				1C3DDE021E6094A00034B3E2 /* SearchItem.m in Sources */,
 				1CE09D4120557C710064D54B /* SettingViewController+ListAndAPIStatus.m in Sources */,
 				1C0867FB1E5C8F3D00E361B5 /* SearchViewController.m in Sources */,
+				E483EB33257F13A800360862 /* HentaiComment.swift in Sources */,
 				1CE09D4920558B760064D54B /* SettingViewController+Lock.m in Sources */,
 				1CEC12C81E500F9300F3E3C4 /* HentaiInfo.m in Sources */,
 				E4D2013923948ED200BB7908 /* GalleryCollectionViewHandler.swift in Sources */,
@@ -904,6 +927,7 @@
 				1CE09D3D20557B8C0064D54B /* SettingViewController+SizeCalculator.m in Sources */,
 				1C7CA72F1E49C13400D94CFB /* HentaiParser.m in Sources */,
 				1CD02DFD200C749200B3F717 /* CBLDatabase+RefreshView.m in Sources */,
+				E483EB2D257DD34D00360862 /* CommentParser.swift in Sources */,
 				1CA255F7203142300040B73F /* DBUserPreference.m in Sources */,
 				1CEC12BF1E500E9A00F3E3C4 /* DaiStorageArray.m in Sources */,
 				1CDF390A236AB55700C927A6 /* MessageCell.swift in Sources */,

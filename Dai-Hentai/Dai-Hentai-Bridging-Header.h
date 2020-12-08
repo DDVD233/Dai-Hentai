@@ -6,6 +6,7 @@
 #import <Crashlytics/Crashlytics.h>
 #import "DBUserPreference.h"
 #import "SettingViewController.h"
+#import "HentaiInfo.h"
 
 @interface NSObject (OwO)
 
