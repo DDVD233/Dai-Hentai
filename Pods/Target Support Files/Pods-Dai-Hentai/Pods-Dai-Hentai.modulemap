@@ -1,0 +1,6 @@
+module Pods_Dai_Hentai {
+  umbrella header "Pods-Dai-Hentai-umbrella.h"
+
+  export *
+  module * { export * }
+}
