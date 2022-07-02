@@ -64,14 +64,12 @@
 		1CEE14732056D84E005983B0 /* translator.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CEE14722056D84E005983B0 /* translator.json */; };
 		1CFE73131FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE73121FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h */; };
 		1CFEE1E921CA76DD00D6010C /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */; };
-		4DC6F4FDFFA849038487E4D8 /* libPods-Dai-Hentai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */; };
+		2D5A030CD0E8D58534CAA900 /* libPods-Dai-Hentai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E19B20CEF126AC66C1F3AF21 /* libPods-Dai-Hentai.a */; };
 		E48D1A672357652E005F1439 /* SettingViewController+LoginUsingExKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E48D1A662357652E005F1439 /* SettingViewController+LoginUsingExKey.m */; };
 		E4D2013923948ED200BB7908 /* GalleryCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2013823948ED200BB7908 /* GalleryCollectionViewHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19DB5C474C0FD71A14F15120 /* Pods-Dai-Hentai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dai-Hentai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dai-Hentai/Pods-Dai-Hentai.debug.xcconfig"; sourceTree = "<group>"; };
-		1A6E9F07B9A9588FE4ECFCA8 /* Pods-Dai-Hentai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dai-Hentai.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dai-Hentai/Pods-Dai-Hentai.release.xcconfig"; sourceTree = "<group>"; };
 		1C000ED71E570F9C004060A5 /* ImageURLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageURLOperation.h; sourceTree = "<group>"; };
 		1C000ED81E570F9C004060A5 /* ImageURLOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageURLOperation.m; sourceTree = "<group>"; };
 		1C0608411E53473500E6A285 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
@@ -179,7 +177,9 @@
 		1CEE14722056D84E005983B0 /* translator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translator.json; sourceTree = "<group>"; };
 		1CFE73121FFE32AE0018172F /* Dai-Hentai-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dai-Hentai-Bridging-Header.h"; sourceTree = "<group>"; };
 		1CFEE1E821CA76DD00D6010C /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
-		88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dai-Hentai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F66D0271124989E2E3BF54D /* Pods-Dai-Hentai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dai-Hentai.release.xcconfig"; path = "Target Support Files/Pods-Dai-Hentai/Pods-Dai-Hentai.release.xcconfig"; sourceTree = "<group>"; };
+		6703F2287B27AB90A6614DD3 /* Pods-Dai-Hentai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dai-Hentai.debug.xcconfig"; path = "Target Support Files/Pods-Dai-Hentai/Pods-Dai-Hentai.debug.xcconfig"; sourceTree = "<group>"; };
+		E19B20CEF126AC66C1F3AF21 /* libPods-Dai-Hentai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dai-Hentai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48D1A662357652E005F1439 /* SettingViewController+LoginUsingExKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SettingViewController+LoginUsingExKey.m"; sourceTree = "<group>"; };
 		E48D1A6823576554005F1439 /* SettingViewController+LoginUsingExKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SettingViewController+LoginUsingExKey.h"; sourceTree = "<group>"; };
 		E4D2013823948ED200BB7908 /* GalleryCollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewHandler.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC6F4FDFFA849038487E4D8 /* libPods-Dai-Hentai.a in Frameworks */,
+				2D5A030CD0E8D58534CAA900 /* libPods-Dai-Hentai.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +247,8 @@
 			children = (
 				1C1AD0311E49B79800544217 /* Dai-Hentai */,
 				1C1AD0301E49B79800544217 /* Products */,
-				32F097A2BD19786DC4F7D842 /* Pods */,
-				C560C138EFC548CADF211306 /* Frameworks */,
+				C60E48BCDF8D70C44B003DB9 /* Pods */,
+				CFA85773DC3D06B095258FB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -698,19 +698,19 @@
 			path = ExCookieChecker;
 			sourceTree = "<group>";
 		};
-		32F097A2BD19786DC4F7D842 /* Pods */ = {
+		C60E48BCDF8D70C44B003DB9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				19DB5C474C0FD71A14F15120 /* Pods-Dai-Hentai.debug.xcconfig */,
-				1A6E9F07B9A9588FE4ECFCA8 /* Pods-Dai-Hentai.release.xcconfig */,
+				6703F2287B27AB90A6614DD3 /* Pods-Dai-Hentai.debug.xcconfig */,
+				2F66D0271124989E2E3BF54D /* Pods-Dai-Hentai.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		C560C138EFC548CADF211306 /* Frameworks */ = {
+		CFA85773DC3D06B095258FB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88F4AEC071F70AFD3813A609 /* libPods-Dai-Hentai.a */,
+				E19B20CEF126AC66C1F3AF21 /* libPods-Dai-Hentai.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -731,12 +731,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C1AD0461E49B79800544217 /* Build configuration list for PBXNativeTarget "Dai-Hentai" */;
 			buildPhases = (
-				5F6B103CB5164C6D1B5F3CB2 /* [CP] Check Pods Manifest.lock */,
+				3E4F476EEACFCF3C3DDE9633 /* [CP] Check Pods Manifest.lock */,
 				1C1AD02B1E49B79800544217 /* Sources */,
 				1C1AD02C1E49B79800544217 /* Frameworks */,
 				1C1AD02D1E49B79800544217 /* Resources */,
-				8242C7F3CAE38698E20FDCC6 /* [CP] Embed Pods Frameworks */,
-				E4A04B382EE4A3F56A06DA93 /* [CP] Copy Pods Resources */,
 				1C6F401A20689DBE0082EE5D /* ShellScript */,
 			);
 			buildRules = (
@@ -811,52 +809,26 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7de17834758164bee76de1104c48ccff26a7a1d7 84216198fa8eaf529539af1e16bcff531a45816a5469ff16948ba11469b70ebf";
 		};
-		5F6B103CB5164C6D1B5F3CB2 /* [CP] Check Pods Manifest.lock */ = {
+		3E4F476EEACFCF3C3DDE9633 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Dai-Hentai-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8242C7F3CAE38698E20FDCC6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dai-Hentai/Pods-Dai-Hentai-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4A04B382EE4A3F56A06DA93 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dai-Hentai/Pods-Dai-Hentai-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1057,19 +1029,19 @@
 		};
 		1C1AD0471E49B79800544217 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19DB5C474C0FD71A14F15120 /* Pods-Dai-Hentai.debug.xcconfig */;
+			baseConfigurationReference = 6703F2287B27AB90A6614DD3 /* Pods-Dai-Hentai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = LaffeyTemp;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20220402;
+				CURRENT_PROJECT_VERSION = 20220701;
 				DEVELOPMENT_TEAM = HWH6G9P2V2;
 				INFOPLIST_FILE = "Dai-Hentai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.21;
+				MARKETING_VERSION = 3.22;
 				PRODUCT_BUNDLE_IDENTIFIER = "works.dd.Dai-Hentai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1082,19 +1054,19 @@
 		};
 		1C1AD0481E49B79800544217 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A6E9F07B9A9588FE4ECFCA8 /* Pods-Dai-Hentai.release.xcconfig */;
+			baseConfigurationReference = 2F66D0271124989E2E3BF54D /* Pods-Dai-Hentai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = LaffeyTemp;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20220402;
+				CURRENT_PROJECT_VERSION = 20220701;
 				DEVELOPMENT_TEAM = HWH6G9P2V2;
 				INFOPLIST_FILE = "Dai-Hentai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.21;
+				MARKETING_VERSION = 3.22;
 				PRODUCT_BUNDLE_IDENTIFIER = "works.dd.Dai-Hentai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
