@@ -11,6 +11,8 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    weak var lastSelectedItem: UITabBarItem? = nil
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -18,6 +20,7 @@ class TabBarController: UITabBarController {
         
         self.delegate = self
         var titles = [ "列表", "歷史", "下載", "設定" ]
+        let selector = Selector(("setText:"))
         for view in tabBar.subviews {
             if
                 let tabBarButton = NSClassFromString("UITabBarButton"),
@@ -28,8 +31,9 @@ class TabBarController: UITabBarController {
                     if
                         let tabBarButtonLabel = NSClassFromString("UITabBarButtonLabel"),
                         subview.isKind(of: tabBarButtonLabel),
-                        subview.respondsOwO("setText:") {
-                        subview.performVoidOwO("setText:", with: titles.first ?? "")
+                        subview.responds(to: selector) {
+                        
+                        subview.perform(selector, with: titles.first ?? "")
                         subview.sizeToFit()
                         titles.remove(at: 0)
                         break
@@ -50,6 +54,13 @@ extension TabBarController: UITabBarControllerDelegate {
             let settingViewController = navigationController.topViewController as? SettingViewController {
             DBUserPreference.setInfo(settingViewController.info)
         }
+    }
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if lastSelectedItem == item {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ListScrollToBottom"), object: nil)
+        }
+        lastSelectedItem = item
     }
     
 }
