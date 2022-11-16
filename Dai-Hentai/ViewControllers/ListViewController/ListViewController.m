@@ -365,10 +365,10 @@
         RelatedViewController *relatedViewController = (RelatedViewController *)segue.destinationViewController;
         relatedViewController.info = sender;
     } else if ([segue.identifier isEqualToString:@"PushToMoreInfo"]) {
-        GalleryInfoViewController *galleryInfoViewController = (GalleryInfoViewController *)segue.destinationViewController;
-        galleryInfoViewController.info = sender;
-        galleryInfoViewController.parser = self.parser;
-        galleryInfoViewController.delegate = self;
+//        GalleryInfoViewController *galleryInfoViewController = (GalleryInfoViewController *)segue.destinationViewController;
+//        galleryInfoViewController.info = sender;
+//        galleryInfoViewController.parser = self.parser;
+//        galleryInfoViewController.delegate = self;
     }
 }
 
